@@ -83,6 +83,26 @@ merged_modules = {
     'web_sheet_full_width': 'web_responsive',
     # OCA/website
     'website_form_metadata': 'website_form',
+
+    'hash_search': 'document_quick_access',
+    'hash_search_account_invoice': 'document_quick_access_document_qr',
+    'hash_search_document_scanner': 'document_quick_access_folder_auto_classification',
+    'hash_search_document_scanner_queue_ssh': 'document_quick_access_folder_auto_classification',
+    'hash_search_purchase': 'document_quick_access',
+    # TODO: Arreglar
+    # 'hash_search_remote_printer': 'document_quick_access_remote_printer',
+    'hash_search_remote_printer': 'document_quick_access',
+    'hr_employee_seniority': 'hr_employee_service_contract',
+    'hr_family': 'hr_employee_relative',
+    # TODO: Mod 190
+    'l10n_es_aeat_mod190': 'l10n_es_aeat',
+    'mail_activity_creator': 'mail',
+    'speeder_account': 'account',
+    'bus_connector_base_location': 'bus_connector_base', # TODO: FIX
+    'stock_pack_operation_auto_fill': 'stock_move_line_auto_fill',
+    'attachment_preview': 'web_responsive',
+    'res_config_settings_enterprise_remove': 'remove_odoo_enterprise',
+    'web_qr': 'report_qr',
 }
 
 # only used here for openupgrade_records analysis:
