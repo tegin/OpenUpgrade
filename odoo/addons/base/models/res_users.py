@@ -899,7 +899,16 @@ class GroupsImplied(models.Model):
         # is good, because the record cache behaves as a memo (the field is
         # never computed twice on a given group.)
         for g in self:
-            g.trans_implied_ids = g.implied_ids | g.mapped('implied_ids.trans_implied_ids')
+#            g.trans_implied_ids = g.implied_ids | g.mapped('implied_ids.trans_implied_ids')
+            g.trans_implied_ids = g._get_trans_implied(self.browse())
+
+    def _get_trans_implied(self, data):
+        for record in self:
+            if record in data:
+                continue
+            data |= record
+            data = record.implied_ids._get_trans_implied(data)
+        return data
 
     @api.model_create_multi
     def create(self, vals_list):
