@@ -91,7 +91,7 @@ merged_modules = {
     'hash_search_purchase': 'document_quick_access',
     'cb_hash_search_purchase': 'document_quick_access',
     # TODO: Arreglar
-    # 'hash_search_remote_printer': 'document_quick_access_remote_printer',
+    'hash_search_remote_printer': 'document_quick_access_remote_printer',
     'hash_search_remote_printer': 'document_quick_access',
     'hr_employee_seniority': 'hr_employee_service_contract',
     'hr_family': 'hr_employee_relative',
@@ -101,6 +101,7 @@ merged_modules = {
     'mail_activity_creator': 'mail',
     'speeder_account': 'account',
     'mcfix_base_model_create_hook': 'base',
+    'cb_invoice_print_label': 'base',
     'bus_connector_base_location': 'bus_connector_base', # TODO: FIX
     'stock_pack_operation_auto_fill': 'stock_move_line_auto_fill',
     'attachment_preview': 'web_responsive',
