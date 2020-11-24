@@ -5,6 +5,7 @@ name: Flake OpenUpgrade
 
 on:
   push:
+    branches: ["13.0"]
   pull_request:
 
 jobs:
